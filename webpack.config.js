@@ -33,5 +33,8 @@ module.exports = {
       filename: "./index.html"
     })
   ],
-  devtool: 'cheap-module-eval-source-map'
+  devtool: 'cheap-module-eval-source-map',
+  devServer: {
+    historyApiFallback: true
+  }
 };
