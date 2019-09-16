@@ -20,8 +20,7 @@ const withAdminWarning = (WrappedComponent) => {
 const requireAutenthical = (WrappedComponent) => {
     return (props) => (
         <div>
-            {props.isAuth && <p>Please! Require your autenthical!</p>}
-            <WrappedComponent {...props} />
+            {props.isAuth ? <WrappedComponent {...props} /> : <p>Please! Require your autenthical!</p>}
         </div>
     );
 }
