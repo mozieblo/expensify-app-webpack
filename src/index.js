@@ -22,4 +22,3 @@ store.dispatch(setTextFilter('bill'));
 store.dispatch(setTextFilter('water'));
 
 ReactDOM.render(<AppRouter />, document.getElementById('app'));
-
