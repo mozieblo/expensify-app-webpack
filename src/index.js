@@ -19,7 +19,6 @@ const unsbuscribe = store.subscribe(() => {
 
 store.dispatch(addExpense({ description: 'water bill', amount: 500 }));
 store.dispatch(addExpense({ description: 'gas bill', amount: 130 }));
-store.dispatch(setTextFilter('bill'));
 store.dispatch(setTextFilter('water'));
 
 setTimeout(() => {
